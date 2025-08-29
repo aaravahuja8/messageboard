@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <title>Video Game Forums</title>
+</head>
+<body>
+<div class="top">
+    <h1>Video Game Forums</h1>
+    <nav>
+        <ul>
+            <li class="left" ><a href="/">Home</a></li>
+            <li class="left" ><a class="active" href="/board">Message Board</a></li>
+            {% if current_user.is_authenticated == False %}
+                <li class="right"><a href="/login">Log In</a></li>
+                <li class="right"><a href="/signup">Sign Up</a></li>
+            {% else %}
+                <li class="right"><a href="/logout">Log Out</a></li>
+                <li class="right"><a href="/users/{{current_user.get_id()}}">Profile</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+<br>
+<div class="profilediv">
+    {% if post == True %}
+        <h2 class="posttitle">{{title}}</h2>
+        <p class="content">{{subtitle|safe}}</p>
+        <p class="postcontent">{{content}}</p>
+        <br>
+        {% if form2 != None %}
+            <form method="POST" action="{{url_for('main.posts', id=id)}}">
+                {{ form2.hidden_tag() }}
+                {{ form2.submit() }}
+            </form>
+            <br>
+        {% endif %}
+        <br>
+        {% for i in range(commentcount) %}
+            <div class="comment">
+                <p class="content">{{commentsubtitles[i]|safe}}</p>
+                <p class="subtitle">{{commentcontent[i]}}</p>
+            </div>
+            <br>
+        {% endfor %}
+        <form method="POST" action="{{url_for('main.posts', id=id)}}">
+            {{ form.hidden_tag() }}
+            <div class="commentdiv">
+                {{ form.content.label }}
+                <br>
+                {{ form.content() }}
+            </div>
+            <div class="newcomment">
+                {{ form.submit() }}
+            </div>
+        </form>
+    {% else %}
+        <h2>Post does not exist</h2>
+    {% endif %}
+</div>
+</body>
+</html>
