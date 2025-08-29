@@ -1,0 +1,331 @@
+h1 {
+    color: #2E994A;
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: Century Gothic, sans-serif;
+    font-size: 28px;
+}
+
+.head {
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    font-size: 22px;
+}
+
+.recent {
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    font-size: 24px;
+    color: red;
+}
+
+.top {
+    font-family: Century Gothic, sans-serif;
+}
+
+div.top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E994A;
+}
+
+div.top li.left {
+    float: left;
+}
+
+div.top li.right {
+    float: right;
+}
+
+div.top li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+div.top li a:hover {
+    background-color: #A5A5A5;
+}
+
+.active {
+    background-color: #3BC45F;
+}
+
+
+input[type=date]:focus {
+    border: 2px solid #2ECCFA;
+}
+
+input[type=date] {
+    width: 20%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #BDBDBD;
+}
+
+input[type=number] {
+    width: 33%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #BDBDBD;
+}
+
+input[type=number]:focus {
+    border: 2px solid #2ECCFA;
+}
+
+input[type=text] {
+    width: 33%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #BDBDBD;
+}
+
+input[type=text]:focus {
+    border: 2px solid #2ECCFA;
+}
+
+input[type=password] {
+    width: 33%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #BDBDBD;
+}
+
+input[type=password]:focus {
+    border: 2px solid #2ECCFA;
+}
+
+input[type=checkbox] {
+    transform: scale(1.4);
+    margin-left: 7px;
+}
+
+textarea:focus {
+    border: 2px solid #2ECCFA;
+}
+
+label, input {
+    font-family: Century Gothic, sans-serif;
+    font-size: 16px;
+}
+
+#submit {
+    background-color: #2E2EFE;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 18px;
+    align-content: center;
+}
+
+#submit:active {
+    background-color: #2E2EFE;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
+
+.profile {
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+}
+
+.profilediv {
+    padding-left: 3px;
+}
+
+.control {
+    font-family: Century Gothic, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #082ccc;
+    display: inline;
+}
+.control:hover {
+    color: #077deb;
+}
+
+.recentposts {
+    width: 50%;
+}
+
+.leftright {
+    font-family: Century Gothic, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+p.leftright {
+    padding: 0px;
+    margin: 0px;
+}
+
+.postlist {
+    font-family: Century Gothic, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+a.postlink {
+    text-decoration: none;
+}
+
+a.postlink:hover {
+  text-decoration: underline;
+}
+
+a.postlink, a.postlink:visited, a.postlink:hover, a.postlink:active {
+  color: blue;
+}
+
+.homeimage {
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hometext {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Century Gothic, sans-serif;
+    font-size: 22px;
+}
+
+.postbutton {
+    background-color: #2E2EFE;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Century Gothic, sans-serif;
+    align-content: center;
+    display: block;
+    margin: auto;
+}
+
+.postbutton:active {
+    background-color: #2E2EFE;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
+
+a.postbuttonlink {
+    text-decoration: none;
+}
+
+.noposts {
+    text-align: center;
+    margin-top: 13%;
+}
+
+.titlediv, .contentdiv, .newpost {
+    margin-left: 25%;
+}
+
+div.titlediv label, div.contentdiv label {
+    font-size: 20px;
+}
+
+div.titlediv input[type=text] {
+    width: 45%;
+}
+
+textarea {
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #BDBDBD;
+    font-family: Century Gothic, sans-serif;
+    font-size: 16px;
+    width: 66%;
+    height: 200px;
+}
+
+textarea:focus {
+    border: 2px solid #2ECCFA;
+}
+
+.post {
+    margin: auto;
+    width: 66%;
+    border: solid 2px;
+    padding: 2px 8px;
+    word-wrap: break-word;
+}
+
+.title {
+    font-family: Century Gothic, sans-serif;
+    font-size: 28px;
+}
+
+.subtitle {
+    font-family: Century Gothic, sans-serif;
+    font-size: 16px;
+}
+
+.content {
+    font-family: Century Gothic, sans-serif;
+    font-size: 18px;
+}
+
+a.noshow, a.noshow:visited, a.noshow:hover, a.noshow:active {
+  text-decoration: none;
+  color: black;
+}
+
+.posttitle {
+    font-family: Century Gothic, sans-serif;
+    font-size: 34px;
+}
+
+.postcontent {
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+div.commentdiv textarea {
+    width: 45%;
+    height: 150px;
+}
+
+div.commentdiv label {
+    font-size: 20px;
+}
+
+.comment {
+    width: 60%;
+    border: solid 2px;
+    word-wrap: break-word;
+    padding: 2px 8px;
+}
+
+.error {
+    padding-left: 3px;
+}
