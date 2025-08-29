@@ -19,8 +19,3 @@ Important URLs:
 /newpost to make a new post (login required)
 
 The database has 3 tables, one to store the user data, one to store the post data, and one to store the comment data. The user table is linked to the post table in a one to many relationship, and so is the post table linked to comment table in a one to many relationship. The comment table also has a foreign key to indicate which user posted that comment. All tables have been set to empty for you to test the creation of users, posts, and comments.
-
-Additional requirements completed:
-1. User authentication
-2. Additional database interactions (3 tables, all with insertion and deletion on posts (and deleting a post deletes its comments too))
-3. AJAX utilized on board.html for the infinite scrolling
